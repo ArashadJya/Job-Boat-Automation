@@ -1,0 +1,2866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Job Hunter · ARASHAD JYA · 2026-09-24 · run 1</title>
+<style>
+:root {
+  --ink:#1b2733; --paper:#f6f8f7; --card:#ffffff; --line:#dde4e1;
+  --go:#0e7a4d; --go-soft:#e3f2ea; --mid:#8a6d1a; --mid-soft:#f7efd8;
+  --low:#6b7280; --low-soft:#eef0f2; --accent:#0e7a4d;
+}
+* { box-sizing: border-box; }
+body {
+  margin:0; background:var(--paper); color:var(--ink);
+  font:15px/1.55 "Segoe UI", system-ui, sans-serif;
+}
+header {
+  background:#16211d; color:#fff; padding:26px 22px;
+}
+header h1 { margin:0 0 6px 0; font-size:20px; }
+header .sub { color:#c9d6cf; font-size:13px; }
+.wrap { max-width:900px; margin:0 auto; padding:20px 16px 60px; }
+.card {
+  background:var(--card); border:1px solid var(--line); border-radius:10px;
+  padding:16px; margin-bottom:14px;
+}
+.cardtop { display:flex; justify-content:space-between; gap:12px; }
+.jobtitle { font-weight:700; font-size:16px; margin-bottom:4px; }
+.meta { color:#5a6b78; font-size:13px; margin-bottom:8px; }
+.tags { margin-top:4px; }
+.tag {
+  display:inline-block; background:var(--go-soft); color:var(--go);
+  border-radius:20px; font-size:12px; padding:2px 10px; margin:0 4px 4px 0;
+}
+.newbadge {
+  background:var(--go); color:#fff; font-size:11px; font-weight:700;
+  border-radius:5px; padding:2px 7px; margin-left:6px;
+}
+.seenbadge {
+  background:var(--low-soft); color:var(--low); font-size:11px; font-weight:700;
+  border-radius:5px; padding:2px 7px; margin-left:6px;
+}
+.walkinbadge {
+  background:var(--mid-soft); color:var(--mid); font-size:11px; font-weight:700;
+  border-radius:5px; padding:2px 7px; margin-left:6px;
+}
+.score {
+  width:58px; height:58px; border-radius:50%; display:flex; align-items:center;
+  justify-content:center; font-weight:700; font-size:15px; flex-shrink:0;
+}
+.score.high { background:var(--go-soft); color:var(--go); }
+.score.mid  { background:var(--mid-soft); color:var(--mid); }
+.score.low  { background:var(--low-soft); color:var(--low); }
+.btn {
+  padding:8px 16px; border-radius:8px; font-weight:600; font-size:14px;
+  text-decoration:none; cursor:pointer; display:inline-block; border:none;
+}
+.btn.apply { background:var(--accent); color:#fff; }
+.btn.ghost { background:transparent; color:var(--accent); border:1px solid var(--accent); }
+.btn.linkbtn {
+  background:#fff; border:1px solid var(--line); font-size:13px; padding:7px 12px;
+  margin:0 8px 8px 0; color:var(--ink);
+}
+.actions { margin-top:12px; display:flex; gap:8px; flex-wrap:wrap; }
+.grouplabel {
+  font-weight:700; font-size:13px; color:#5a6b78; text-transform:uppercase;
+  letter-spacing:.5px; margin:14px 0 8px;
+}
+.linkrow { margin-bottom:4px; }
+.kit { display:none; border-top:1px dashed var(--line); padding-top:12px; margin-top:12px; }
+.kit.open { display:block; }
+.kitlabel { font-weight:600; font-size:13px; margin:10px 0 4px; }
+pre {
+  background:#f2f5f4; border:1px solid var(--line); border-radius:8px;
+  padding:10px 12px; white-space:pre-wrap; font:13px/1.5 Consolas, monospace;
+}
+.notice {
+  background:#fff8e6; border:1px solid #eadfb0; border-radius:10px;
+  padding:12px 14px; font-size:13px; margin-bottom:16px;
+}
+.copy {
+  font-size:12px; padding:3px 10px; border-radius:6px; border:1px solid var(--line);
+  background:#fff; cursor:pointer;
+}
+footer { text-align:center; color:#8a99a6; font-size:12px; padding:20px 0 40px; }
+@media (max-width:600px) { .cardtop { flex-direction:column; } }
+
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<h1>Job Hunter dashboard · 2026-09-24 · run 1</h1>
+<div class="sub">ARASHAD JYA · 62 matched jobs (38 new, 24 from earlier runs) · generated 2026-09-24 20:25:43 · skills: data structures, problem solving, multithreading, spring boot, javascript, algorithms, hibernate, debugging, intellij, vs code</div>
+</div>
+</header>
+<div class="wrap">
+<div class="notice">
+<b>How to use:</b> Start with the Quick Apply buttons below — each opens a pre-filtered fresher search where you apply in one click. Then work through the matched jobs list. There are two automation tiers: <b>Greenhouse/Lever</b> postings support real auto-apply (dry-run by default — add <code>--live</code> to actually send); <b>LinkedIn/Naukri</b> postings only get assisted fill (opens a real Chrome window, fills your details, and stops before Submit) because those platforms permanently ban accounts that auto-submit. Walk-in drives are LinkedIn feed posts, not job listings, so the “Walk-in drives” group searches LinkedIn's post/content search instead of the Jobs tab.
+</div>
+<div class="card">
+<div class="grouplabel">By skill</div>
+<div class="linkrow">
+<a class="btn linkbtn" href="https://www.naukri.com/data-structures-fresher-jobs?jobAge=3" target="_blank" rel="noopener">Naukri: data structures (fresher)</a>
+<a class="btn linkbtn" href="https://www.linkedin.com/jobs/search/?keywords=data+structures&amp;f_E=1%2C2&amp;f_AL=true&amp;location=India" target="_blank" rel="noopener">LinkedIn Easy Apply: data structures</a>
+<a class="btn linkbtn" href="https://www.naukri.com/problem-solving-fresher-jobs?jobAge=3" target="_blank" rel="noopener">Naukri: problem solving (fresher)</a>
+<a class="btn linkbtn" href="https://www.linkedin.com/jobs/search/?keywords=problem+solving&amp;f_E=1%2C2&amp;f_AL=true&amp;location=India" target="_blank" rel="noopener">LinkedIn Easy Apply: problem solving</a>
+<a class="btn linkbtn" href="https://www.naukri.com/multithreading-fresher-jobs?jobAge=3" target="_blank" rel="noopener">Naukri: multithreading (fresher)</a>
+<a class="btn linkbtn" href="https://www.linkedin.com/jobs/search/?keywords=multithreading&amp;f_E=1%2C2&amp;f_AL=true&amp;location=India" target="_blank" rel="noopener">LinkedIn Easy Apply: multithreading</a>
+<a class="btn linkbtn" href="https://www.naukri.com/spring-boot-fresher-jobs?jobAge=3" target="_blank" rel="noopener">Naukri: spring boot (fresher)</a>
+<a class="btn linkbtn" href="https://www.linkedin.com/jobs/search/?keywords=spring+boot&amp;f_E=1%2C2&amp;f_AL=true&amp;location=India" target="_blank" rel="noopener">LinkedIn Easy Apply: spring boot</a>
+<a class="btn linkbtn" href="https://www.naukri.com/javascript-fresher-jobs?jobAge=3" target="_blank" rel="noopener">Naukri: javascript (fresher)</a>
+<a class="btn linkbtn" href="https://www.linkedin.com/jobs/search/?keywords=javascript&amp;f_E=1%2C2&amp;f_AL=true&amp;location=India" target="_blank" rel="noopener">LinkedIn Easy Apply: javascript</a>
+<a class="btn linkbtn" href="https://www.naukri.com/algorithms-fresher-jobs?jobAge=3" target="_blank" rel="noopener">Naukri: algorithms (fresher)</a>
+<a class="btn linkbtn" href="https://www.linkedin.com/jobs/search/?keywords=algorithms&amp;f_E=1%2C2&amp;f_AL=true&amp;location=India" target="_blank" rel="noopener">LinkedIn Easy Apply: algorithms</a>
+</div>
+<div class="grouplabel">By city (Naukri)</div>
+<div class="linkrow">
+<a class="btn linkbtn" href="https://www.naukri.com/data-structures-fresher-jobs-in-bangalore?jobAge=3" target="_blank" rel="noopener">Naukri: Bangalore</a>
+<a class="btn linkbtn" href="https://www.naukri.com/data-structures-fresher-jobs-in-hyderabad?jobAge=3" target="_blank" rel="noopener">Naukri: Hyderabad</a>
+<a class="btn linkbtn" href="https://www.naukri.com/data-structures-fresher-jobs-in-pune?jobAge=3" target="_blank" rel="noopener">Naukri: Pune</a>
+<a class="btn linkbtn" href="https://www.naukri.com/data-structures-fresher-jobs-in-noida?jobAge=3" target="_blank" rel="noopener">Naukri: Noida</a>
+<a class="btn linkbtn" href="https://www.naukri.com/data-structures-fresher-jobs-in-chennai?jobAge=3" target="_blank" rel="noopener">Naukri: Chennai</a>
+<a class="btn linkbtn" href="https://www.naukri.com/data-structures-fresher-jobs-in-mumbai?jobAge=3" target="_blank" rel="noopener">Naukri: Mumbai</a>
+<a class="btn linkbtn" href="https://www.naukri.com/data-structures-fresher-jobs-in-gurgaon?jobAge=3" target="_blank" rel="noopener">Naukri: Gurgaon</a>
+<a class="btn linkbtn" href="https://www.naukri.com/data-structures-fresher-jobs-in-delhi?jobAge=3" target="_blank" rel="noopener">Naukri: Delhi</a>
+</div>
+<div class="grouplabel">By role</div>
+<div class="linkrow">
+<a class="btn linkbtn" href="https://www.naukri.com/software-engineer-fresher-jobs?jobAge=3" target="_blank" rel="noopener">Naukri: software engineer</a>
+<a class="btn linkbtn" href="https://www.naukri.com/software-developer-fresher-jobs?jobAge=3" target="_blank" rel="noopener">Naukri: software developer</a>
+<a class="btn linkbtn" href="https://www.naukri.com/sde-fresher-jobs?jobAge=3" target="_blank" rel="noopener">Naukri: sde</a>
+<a class="btn linkbtn" href="https://www.naukri.com/web-developer-fresher-jobs?jobAge=3" target="_blank" rel="noopener">Naukri: web developer</a>
+<a class="btn linkbtn" href="https://www.naukri.com/qa-engineer-fresher-jobs?jobAge=3" target="_blank" rel="noopener">Naukri: qa engineer</a>
+<a class="btn linkbtn" href="https://www.naukri.com/support-engineer-fresher-jobs?jobAge=3" target="_blank" rel="noopener">Naukri: support engineer</a>
+<a class="btn linkbtn" href="https://www.naukri.com/data-analyst-fresher-jobs?jobAge=3" target="_blank" rel="noopener">Naukri: data analyst</a>
+<a class="btn linkbtn" href="https://www.linkedin.com/jobs/search/?keywords=software+engineer&amp;f_E=1%2C2&amp;f_AL=true&amp;location=India" target="_blank" rel="noopener">LinkedIn Easy Apply (India)</a>
+<a class="btn linkbtn" href="https://www.linkedin.com/jobs/search/?keywords=software+engineer&amp;f_E=1%2C2&amp;f_AL=true&amp;f_WT=2" target="_blank" rel="noopener">LinkedIn Remote</a>
+</div>
+<div class="grouplabel">Freshest (posted in last 3 days)</div>
+<div class="linkrow">
+<a class="btn linkbtn" href="https://www.naukri.com/it-fresher-jobs?jobAge=3" target="_blank" rel="noopener">Naukri: IT fresher jobs (last 3 days)</a>
+<a class="btn linkbtn" href="https://www.naukri.com/data-structures-fresher-jobs?jobAge=3" target="_blank" rel="noopener">Naukri: data structures (last 3 days)</a>
+<a class="btn linkbtn" href="https://www.linkedin.com/jobs/search/?keywords=software+engineer&amp;f_E=1%2C2&amp;f_AL=true&amp;location=India&amp;f_TPR=r259200" target="_blank" rel="noopener">LinkedIn Easy Apply (last 3 days)</a>
+</div>
+<div class="grouplabel">LinkedIn · This week&#39;s postings (Java / SE / SDE)</div>
+<div class="linkrow">
+<a class="btn linkbtn" href="https://www.linkedin.com/jobs/search/?keywords=Java+Developer&amp;location=India&amp;f_TPR=r604800" target="_blank" rel="noopener">Java Developer · India (past week)</a>
+<a class="btn linkbtn" href="https://www.linkedin.com/jobs/search/?keywords=Java+Developer&amp;f_WT=2&amp;f_TPR=r604800" target="_blank" rel="noopener">Java Developer · Remote (past week)</a>
+<a class="btn linkbtn" href="https://www.linkedin.com/jobs/search/?keywords=Software+Engineer&amp;location=India&amp;f_TPR=r604800" target="_blank" rel="noopener">Software Engineer · India (past week)</a>
+<a class="btn linkbtn" href="https://www.linkedin.com/jobs/search/?keywords=Software+Engineer&amp;f_WT=2&amp;f_TPR=r604800" target="_blank" rel="noopener">Software Engineer · Remote (past week)</a>
+<a class="btn linkbtn" href="https://www.linkedin.com/jobs/search/?keywords=SDE&amp;location=India&amp;f_TPR=r604800" target="_blank" rel="noopener">SDE · India (past week)</a>
+<a class="btn linkbtn" href="https://www.linkedin.com/jobs/search/?keywords=SDE&amp;f_WT=2&amp;f_TPR=r604800" target="_blank" rel="noopener">SDE · Remote (past week)</a>
+</div>
+<div class="grouplabel">Walk-in drives</div>
+<div class="linkrow">
+<a class="btn linkbtn" href="https://www.linkedin.com/search/results/content/?keywords=walk-in+drive+software+engineer&amp;sortBy=%22date_posted%22&amp;datePosted=%22past-week%22" target="_blank" rel="noopener">LinkedIn posts: walk-in drive software engineer</a>
+<a class="btn linkbtn" href="https://www.linkedin.com/search/results/content/?keywords=walk-in+drive+java+developer&amp;sortBy=%22date_posted%22&amp;datePosted=%22past-week%22" target="_blank" rel="noopener">LinkedIn posts: walk-in drive java developer</a>
+<a class="btn linkbtn" href="https://www.linkedin.com/search/results/content/?keywords=walk-in+drive+web+developer&amp;sortBy=%22date_posted%22&amp;datePosted=%22past-week%22" target="_blank" rel="noopener">LinkedIn posts: walk-in drive web developer</a>
+<a class="btn linkbtn" href="https://www.linkedin.com/search/results/content/?keywords=walk-in+drive+sde&amp;sortBy=%22date_posted%22&amp;datePosted=%22past-week%22" target="_blank" rel="noopener">LinkedIn posts: walk-in drive sde</a>
+<a class="btn linkbtn" href="https://www.naukri.com/walkin-jobs-in-bangalore" target="_blank" rel="noopener">Naukri walk-in: Bangalore</a>
+<a class="btn linkbtn" href="https://www.naukri.com/walkin-jobs-in-hyderabad" target="_blank" rel="noopener">Naukri walk-in: Hyderabad</a>
+<a class="btn linkbtn" href="https://www.naukri.com/walkin-jobs-in-pune" target="_blank" rel="noopener">Naukri walk-in: Pune</a>
+<a class="btn linkbtn" href="https://www.naukri.com/walkin-jobs-in-noida" target="_blank" rel="noopener">Naukri walk-in: Noida</a>
+<a class="btn linkbtn" href="https://www.naukri.com/walkin-jobs-in-chennai" target="_blank" rel="noopener">Naukri walk-in: Chennai</a>
+<a class="btn linkbtn" href="https://www.naukri.com/walkin-jobs-in-mumbai" target="_blank" rel="noopener">Naukri walk-in: Mumbai</a>
+<a class="btn linkbtn" href="https://www.naukri.com/walkin-jobs-in-gurgaon" target="_blank" rel="noopener">Naukri walk-in: Gurgaon</a>
+<a class="btn linkbtn" href="https://www.naukri.com/walkin-jobs-in-delhi" target="_blank" rel="noopener">Naukri walk-in: Delhi</a>
+<a class="btn linkbtn" href="https://www.naukri.com/walkin-jobs" target="_blank" rel="noopener">Naukri: all walk-in jobs</a>
+</div>
+<div class="grouplabel">Shine</div>
+<div class="linkrow">
+<a class="btn linkbtn" href="https://www.shine.com/job-search/data-structures-fresher-jobs" target="_blank" rel="noopener">Shine: data structures (fresher)</a>
+<a class="btn linkbtn" href="https://www.shine.com/job-search/problem-solving-fresher-jobs" target="_blank" rel="noopener">Shine: problem solving (fresher)</a>
+<a class="btn linkbtn" href="https://www.shine.com/job-search/multithreading-fresher-jobs" target="_blank" rel="noopener">Shine: multithreading (fresher)</a>
+<a class="btn linkbtn" href="https://www.shine.com/job-search/spring-boot-fresher-jobs" target="_blank" rel="noopener">Shine: spring boot (fresher)</a>
+<a class="btn linkbtn" href="https://www.shine.com/job-search/javascript-fresher-jobs" target="_blank" rel="noopener">Shine: javascript (fresher)</a>
+<a class="btn linkbtn" href="https://www.shine.com/job-search/algorithms-fresher-jobs" target="_blank" rel="noopener">Shine: algorithms (fresher)</a>
+</div>
+<div class="grouplabel">Indeed</div>
+<div class="linkrow">
+<a class="btn linkbtn" href="https://in.indeed.com/jobs?q=data+structures+fresher&amp;l=India&amp;fromage=7" target="_blank" rel="noopener">Indeed: data structures (fresher, last 7 days)</a>
+<a class="btn linkbtn" href="https://in.indeed.com/jobs?q=problem+solving+fresher&amp;l=India&amp;fromage=7" target="_blank" rel="noopener">Indeed: problem solving (fresher, last 7 days)</a>
+<a class="btn linkbtn" href="https://in.indeed.com/jobs?q=multithreading+fresher&amp;l=India&amp;fromage=7" target="_blank" rel="noopener">Indeed: multithreading (fresher, last 7 days)</a>
+<a class="btn linkbtn" href="https://in.indeed.com/jobs?q=spring+boot+fresher&amp;l=India&amp;fromage=7" target="_blank" rel="noopener">Indeed: spring boot (fresher, last 7 days)</a>
+<a class="btn linkbtn" href="https://in.indeed.com/jobs?q=javascript+fresher&amp;l=India&amp;fromage=7" target="_blank" rel="noopener">Indeed: javascript (fresher, last 7 days)</a>
+<a class="btn linkbtn" href="https://in.indeed.com/jobs?q=algorithms+fresher&amp;l=India&amp;fromage=7" target="_blank" rel="noopener">Indeed: algorithms (fresher, last 7 days)</a>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#1 Full Stack Developer (React / Node.js) (m/f/d) <span class="newbadge">NEW</span></div>
+<div class="meta">Probis Software Gmbh · Berlin · via Arbeitnow · 1790248159</div>
+<div class="tags"><span class="tag">javascript</span><span class="tag">java</span><span class="tag">sql</span><span class="tag">git</span></div>
+</div>
+<div class="score mid">63%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.com/jobs/companies/probis-software-gmbh/full-stack-developer-react-nodejs-berlin-78632" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit1')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd1')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd1" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.com/jobs/companies/probis-software-gmbh/full-stack-developer-react-nodejs-berlin-78632&quot; --company &quot;Probis Software Gmbh&quot; --title &quot;Full Stack Developer (React / Node.js) (m/f/d)&quot;</textarea>
+<div class="kit" id="kit1">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch1')">Copy</button></div>
+<pre id="pitch1">B.Tech CS graduate skilled in javascript, java, sql, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl1')">Copy</button></div>
+<pre id="cl1">Dear Hiring Team at Probis Software Gmbh,
+
+I am writing to apply for the Full Stack Developer (React / Node.js) (m/f/d) position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with javascript, java, sql, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#2 TYPO3-Developer <span class="newbadge">NEW</span></div>
+<div class="meta">familie redlich · Berlin · via Arbeitnow · 1790254828</div>
+<div class="tags"><span class="tag">javascript</span><span class="tag">java</span><span class="tag">html</span><span class="tag">css</span><span class="tag">sql</span><span class="tag">git</span></div>
+</div>
+<div class="score mid">61%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.com/jobs/companies/familie-redlich/typo3-developer-berlin-106678" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit2')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd2')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd2" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.com/jobs/companies/familie-redlich/typo3-developer-berlin-106678&quot; --company &quot;familie redlich&quot; --title &quot;TYPO3-Developer&quot;</textarea>
+<div class="kit" id="kit2">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch2')">Copy</button></div>
+<pre id="pitch2">B.Tech CS graduate skilled in javascript, java, html, css, sql. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl2')">Copy</button></div>
+<pre id="cl2">Dear Hiring Team at familie redlich,
+
+I am writing to apply for the TYPO3-Developer position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with javascript, java, html, css, sql, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#3 Backend Engineer (Security) <span class="newbadge">NEW</span></div>
+<div class="meta">Triggerdev · Remote or Hybrid UK · via Arbeitnow · 1790253602</div>
+<div class="tags"><span class="tag">debugging</span><span class="tag">github</span><span class="tag">git</span></div>
+</div>
+<div class="score mid">56%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.co.uk/jobs/companies/triggerdev/remote-backend-engineer-security-498097" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit3')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd3')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd3" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.co.uk/jobs/companies/triggerdev/remote-backend-engineer-security-498097&quot; --company &quot;Triggerdev&quot; --title &quot;Backend Engineer (Security)&quot;</textarea>
+<div class="kit" id="kit3">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch3')">Copy</button></div>
+<pre id="pitch3">B.Tech CS graduate skilled in debugging, github, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl3')">Copy</button></div>
+<pre id="cl3">Dear Hiring Team at Triggerdev,
+
+I am writing to apply for the Backend Engineer (Security) position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with debugging, github, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#4 Data Analytics / Data Science Tutor/Lehrkraft (all genders) <span class="newbadge">NEW</span></div>
+<div class="meta">Stackfuel · Remote - Germany · via Arbeitnow · 1790239211</div>
+<div class="tags"><span class="tag">python</span><span class="tag">sql</span></div>
+</div>
+<div class="score low">49%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.com/jobs/companies/stackfuel/data-analytics-data-science-tutor-lehrkraft-all-genders-berlin-220614" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit4')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd4')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd4" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.com/jobs/companies/stackfuel/data-analytics-data-science-tutor-lehrkraft-all-genders-berlin-220614&quot; --company &quot;Stackfuel&quot; --title &quot;Data Analytics / Data Science Tutor/Lehrkraft (all genders)&quot;</textarea>
+<div class="kit" id="kit4">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch4')">Copy</button></div>
+<pre id="pitch4">B.Tech CS graduate skilled in python, sql. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl4')">Copy</button></div>
+<pre id="cl4">Dear Hiring Team at Stackfuel,
+
+I am writing to apply for the Data Analytics / Data Science Tutor/Lehrkraft (all genders) position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with python, sql through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#5 Machine Learning Engineer <span class="newbadge">NEW</span></div>
+<div class="meta">Phantasma Labs · Berlin · via Arbeitnow · 1790254830</div>
+<div class="tags"><span class="tag">algorithms</span><span class="tag">python</span><span class="tag">github</span><span class="tag">git</span></div>
+</div>
+<div class="score low">48%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.com/jobs/companies/phantasma-labs/machine-learning-engineer-berlin-435827" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit5')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd5')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd5" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.com/jobs/companies/phantasma-labs/machine-learning-engineer-berlin-435827&quot; --company &quot;Phantasma Labs&quot; --title &quot;Machine Learning Engineer&quot;</textarea>
+<div class="kit" id="kit5">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch5')">Copy</button></div>
+<pre id="pitch5">B.Tech CS graduate skilled in algorithms, python, github, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl5')">Copy</button></div>
+<pre id="cl5">Dear Hiring Team at Phantasma Labs,
+
+I am writing to apply for the Machine Learning Engineer position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with algorithms, python, github, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#6 Product Engineer <span class="newbadge">NEW</span></div>
+<div class="meta">The Flex · Paris · via Arbeitnow · 1790181612</div>
+<div class="tags"><span class="tag">python</span><span class="tag">github</span><span class="tag">sql</span><span class="tag">git</span></div>
+</div>
+<div class="score low">48%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.fr/jobs/companies/the-flex/product-engineer-paris-29691" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit6')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd6')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd6" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.fr/jobs/companies/the-flex/product-engineer-paris-29691&quot; --company &quot;The Flex&quot; --title &quot;Product Engineer&quot;</textarea>
+<div class="kit" id="kit6">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch6')">Copy</button></div>
+<pre id="pitch6">B.Tech CS graduate skilled in python, github, sql, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl6')">Copy</button></div>
+<pre id="cl6">Dear Hiring Team at The Flex,
+
+I am writing to apply for the Product Engineer position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with python, github, sql, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#7 Analytics Engineer (w/m/d) <span class="newbadge">NEW</span></div>
+<div class="meta">Stackfuel · Berlin · via Arbeitnow · 1790239211</div>
+<div class="tags"><span class="tag">python</span><span class="tag">github</span><span class="tag">sql</span><span class="tag">git</span></div>
+</div>
+<div class="score low">48%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.com/jobs/companies/stackfuel/analytics-engineer-berlin-221830" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit7')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd7')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd7" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.com/jobs/companies/stackfuel/analytics-engineer-berlin-221830&quot; --company &quot;Stackfuel&quot; --title &quot;Analytics Engineer (w/m/d)&quot;</textarea>
+<div class="kit" id="kit7">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch7')">Copy</button></div>
+<pre id="pitch7">B.Tech CS graduate skilled in python, github, sql, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl7')">Copy</button></div>
+<pre id="cl7">Dear Hiring Team at Stackfuel,
+
+I am writing to apply for the Analytics Engineer (w/m/d) position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with python, github, sql, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#8 AI Product Engineer <span class="newbadge">NEW</span></div>
+<div class="meta">Ygo · Remote EU · via Arbeitnow · 1790239206</div>
+<div class="tags"><span class="tag">sql</span></div>
+</div>
+<div class="score low">42%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.com/jobs/companies/ygo/remote-ai-product-engineer-291436" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit8')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd8')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd8" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.com/jobs/companies/ygo/remote-ai-product-engineer-291436&quot; --company &quot;Ygo&quot; --title &quot;AI Product Engineer&quot;</textarea>
+<div class="kit" id="kit8">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch8')">Copy</button></div>
+<pre id="pitch8">B.Tech CS graduate skilled in sql. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl8')">Copy</button></div>
+<pre id="cl8">Dear Hiring Team at Ygo,
+
+I am writing to apply for the AI Product Engineer position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with sql through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#9 Software Engineer - Vehicle OS <span class="newbadge">NEW</span></div>
+<div class="meta">Applied · Stuttgart · via Arbeitnow · 1790250008</div>
+<div class="tags"><span class="tag">python</span><span class="tag">java</span><span class="tag">git</span></div>
+</div>
+<div class="score low">41%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.com/jobs/companies/applied/software-engineer-vehicle-os-stuttgart-317374" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit9')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd9')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd9" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.com/jobs/companies/applied/software-engineer-vehicle-os-stuttgart-317374&quot; --company &quot;Applied&quot; --title &quot;Software Engineer - Vehicle OS&quot;</textarea>
+<div class="kit" id="kit9">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch9')">Copy</button></div>
+<pre id="pitch9">B.Tech CS graduate skilled in python, java, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl9')">Copy</button></div>
+<pre id="cl9">Dear Hiring Team at Applied,
+
+I am writing to apply for the Software Engineer - Vehicle OS position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with python, java, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#10 Data Engineer (f/m/d) <span class="newbadge">NEW</span></div>
+<div class="meta">Good Hood GmbH / nebenan.de · Berlin · via Arbeitnow · 1790249434</div>
+<div class="tags"><span class="tag">algorithms</span><span class="tag">vs code</span><span class="tag">python</span><span class="tag">github</span><span class="tag">sql</span><span class="tag">git</span></div>
+</div>
+<div class="score low">41%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.com/jobs/companies/good-hood-gmbh-nebenande/data-engineer-berlin-279762" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit10')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd10')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd10" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.com/jobs/companies/good-hood-gmbh-nebenande/data-engineer-berlin-279762&quot; --company &quot;Good Hood GmbH / nebenan.de&quot; --title &quot;Data Engineer (f/m/d)&quot;</textarea>
+<div class="kit" id="kit10">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch10')">Copy</button></div>
+<pre id="pitch10">B.Tech CS graduate skilled in algorithms, vs code, python, github, sql. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl10')">Copy</button></div>
+<pre id="cl10">Dear Hiring Team at Good Hood GmbH / nebenan.de,
+
+I am writing to apply for the Data Engineer (f/m/d) position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with algorithms, vs code, python, github, sql, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#11 Applied ML Engineer <span class="newbadge">NEW</span></div>
+<div class="meta">Jobgether · France · via Arbeitnow · 1790234673</div>
+<div class="tags"><span class="tag">python</span><span class="tag">sql</span><span class="tag">git</span></div>
+</div>
+<div class="score low">41%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.fr/jobs/companies/jobgether/applied-ml-engineer-france-147401" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit11')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd11')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd11" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.fr/jobs/companies/jobgether/applied-ml-engineer-france-147401&quot; --company &quot;Jobgether&quot; --title &quot;Applied ML Engineer&quot;</textarea>
+<div class="kit" id="kit11">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch11')">Copy</button></div>
+<pre id="pitch11">B.Tech CS graduate skilled in python, sql, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl11')">Copy</button></div>
+<pre id="cl11">Dear Hiring Team at Jobgether,
+
+I am writing to apply for the Applied ML Engineer position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with python, sql, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#12 Internship - Data Engineer Core Data Product - Lille (f/m/d) <span class="newbadge">NEW</span></div>
+<div class="meta">Decathlontechnology · Villeneuve-d&#39;Ascq, Nord · via Arbeitnow · 1790193325</div>
+<div class="tags"><span class="tag">python</span><span class="tag">github</span><span class="tag">git</span></div>
+</div>
+<div class="score low">41%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.fr/jobs/companies/decathlontechnology/internship-data-engineer-core-data-product-lille-villeneuve-dascq-nord-171725" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit12')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd12')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd12" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.fr/jobs/companies/decathlontechnology/internship-data-engineer-core-data-product-lille-villeneuve-dascq-nord-171725&quot; --company &quot;Decathlontechnology&quot; --title &quot;Internship - Data Engineer Core Data Product - Lille (f/m/d)&quot;</textarea>
+<div class="kit" id="kit12">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch12')">Copy</button></div>
+<pre id="pitch12">B.Tech CS graduate skilled in python, github, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl12')">Copy</button></div>
+<pre id="cl12">Dear Hiring Team at Decathlontechnology,
+
+I am writing to apply for the Internship - Data Engineer Core Data Product - Lille (f/m/d) position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with python, github, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#13 Internship - Data Engineer Core Data Product (f/m/d)- Paris <span class="newbadge">NEW</span></div>
+<div class="meta">Decathlontechnology · Paris, Paris · via Arbeitnow · 1790193325</div>
+<div class="tags"><span class="tag">python</span><span class="tag">github</span><span class="tag">git</span></div>
+</div>
+<div class="score low">41%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.fr/jobs/companies/decathlontechnology/internship-data-engineer-core-data-product-paris-paris-paris-421816" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit13')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd13')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd13" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.fr/jobs/companies/decathlontechnology/internship-data-engineer-core-data-product-paris-paris-paris-421816&quot; --company &quot;Decathlontechnology&quot; --title &quot;Internship - Data Engineer Core Data Product (f/m/d)- Paris&quot;</textarea>
+<div class="kit" id="kit13">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch13')">Copy</button></div>
+<pre id="pitch13">B.Tech CS graduate skilled in python, github, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl13')">Copy</button></div>
+<pre id="cl13">Dear Hiring Team at Decathlontechnology,
+
+I am writing to apply for the Internship - Data Engineer Core Data Product (f/m/d)- Paris position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with python, github, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#14 AI Operations <span class="newbadge">NEW</span></div>
+<div class="meta">Thirdfort · London/ Manchester · via Arbeitnow · 1790252647</div>
+<div class="tags"><span class="tag">javascript</span><span class="tag">python</span><span class="tag">java</span></div>
+</div>
+<div class="score low">41%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.co.uk/jobs/companies/thirdfort/ai-operations-london-manchester-366251" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit14')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd14')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd14" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.co.uk/jobs/companies/thirdfort/ai-operations-london-manchester-366251&quot; --company &quot;Thirdfort&quot; --title &quot;AI Operations&quot;</textarea>
+<div class="kit" id="kit14">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch14')">Copy</button></div>
+<pre id="pitch14">B.Tech CS graduate skilled in javascript, python, java. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl14')">Copy</button></div>
+<pre id="cl14">Dear Hiring Team at Thirdfort,
+
+I am writing to apply for the AI Operations position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with javascript, python, java through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#15 2027 Graduate Analyst <span class="newbadge">NEW</span></div>
+<div class="meta">Zopa · London · via Arbeitnow · 1790252646</div>
+<div class="tags"><span class="tag">problem solving</span><span class="tag">python</span><span class="tag">sql</span></div>
+</div>
+<div class="score low">41%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.co.uk/jobs/companies/zopa/2027-graduate-analyst-london-310914" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit15')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd15')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd15" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.co.uk/jobs/companies/zopa/2027-graduate-analyst-london-310914&quot; --company &quot;Zopa&quot; --title &quot;2027 Graduate Analyst&quot;</textarea>
+<div class="kit" id="kit15">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch15')">Copy</button></div>
+<pre id="pitch15">B.Tech CS graduate skilled in problem solving, python, sql. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl15')">Copy</button></div>
+<pre id="cl15">Dear Hiring Team at Zopa,
+
+I am writing to apply for the 2027 Graduate Analyst position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with problem solving, python, sql through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#16 Java Backend Developer (m/w/d) <span class="newbadge">NEW</span></div>
+<div class="meta">Avelion Group · München · via Arbeitnow · 1790237381</div>
+<div class="tags"><span class="tag">spring boot</span><span class="tag">spring</span><span class="tag">java</span></div>
+</div>
+<div class="score low">41%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.com/jobs/companies/avelion-group/java-backend-developer-munchen-400549" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit16')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd16')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd16" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.com/jobs/companies/avelion-group/java-backend-developer-munchen-400549&quot; --company &quot;Avelion Group&quot; --title &quot;Java Backend Developer (m/w/d)&quot;</textarea>
+<div class="kit" id="kit16">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch16')">Copy</button></div>
+<pre id="pitch16">B.Tech CS graduate skilled in spring boot, spring, java. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl16')">Copy</button></div>
+<pre id="cl16">Dear Hiring Team at Avelion Group,
+
+I am writing to apply for the Java Backend Developer (m/w/d) position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with spring boot, spring, java through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#17 Junior Data Engineer <span class="newbadge">NEW</span></div>
+<div class="meta">Reeeliance · Hamburg · via Arbeitnow · 1790237367</div>
+<div class="tags"><span class="tag">python</span><span class="tag">sql</span><span class="tag">git</span></div>
+</div>
+<div class="score low">41%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.com/jobs/companies/reeeliance/junior-data-engineer-hamburg-195323" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit17')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd17')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd17" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.com/jobs/companies/reeeliance/junior-data-engineer-hamburg-195323&quot; --company &quot;Reeeliance&quot; --title &quot;Junior Data Engineer&quot;</textarea>
+<div class="kit" id="kit17">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch17')">Copy</button></div>
+<pre id="pitch17">B.Tech CS graduate skilled in python, sql, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl17')">Copy</button></div>
+<pre id="cl17">Dear Hiring Team at Reeeliance,
+
+I am writing to apply for the Junior Data Engineer position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with python, sql, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#18 Softwareentwickler Client-Server-Anwendungen (m/w/d) <span class="newbadge">NEW</span></div>
+<div class="meta">MY Humancapital GmbH · Munich · via Arbeitnow · 1790236839</div>
+<div class="tags"><span class="tag">python</span><span class="tag">java</span><span class="tag">sql</span></div>
+</div>
+<div class="score low">41%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.com/jobs/companies/my-humancapital-gmbh/softwareentwickler-client-server-anwendungen-munich-117633" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit18')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd18')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd18" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.com/jobs/companies/my-humancapital-gmbh/softwareentwickler-client-server-anwendungen-munich-117633&quot; --company &quot;MY Humancapital GmbH&quot; --title &quot;Softwareentwickler Client-Server-Anwendungen (m/w/d)&quot;</textarea>
+<div class="kit" id="kit18">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch18')">Copy</button></div>
+<pre id="pitch18">B.Tech CS graduate skilled in python, java, sql. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl18')">Copy</button></div>
+<pre id="cl18">Dear Hiring Team at MY Humancapital GmbH,
+
+I am writing to apply for the Softwareentwickler Client-Server-Anwendungen (m/w/d) position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with python, java, sql through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#19 Applied ML Engineer <span class="newbadge">NEW</span></div>
+<div class="meta">Jobgether · Germany · via Arbeitnow · 1790227490</div>
+<div class="tags"><span class="tag">python</span><span class="tag">sql</span><span class="tag">git</span></div>
+</div>
+<div class="score low">41%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.com/jobs/companies/jobgether/applied-ml-engineer-germany-9103" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit19')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd19')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd19" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.com/jobs/companies/jobgether/applied-ml-engineer-germany-9103&quot; --company &quot;Jobgether&quot; --title &quot;Applied ML Engineer&quot;</textarea>
+<div class="kit" id="kit19">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch19')">Copy</button></div>
+<pre id="pitch19">B.Tech CS graduate skilled in python, sql, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl19')">Copy</button></div>
+<pre id="cl19">Dear Hiring Team at Jobgether,
+
+I am writing to apply for the Applied ML Engineer position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with python, sql, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#20 Web Designer <span class="newbadge">NEW</span></div>
+<div class="meta">SmartClout Media · United States · via Himalayas · 1790242640</div>
+<div class="tags"><span class="tag">javascript</span><span class="tag">debugging</span><span class="tag">java</span><span class="tag">html</span><span class="tag">css</span><span class="tag">git</span></div>
+</div>
+<div class="score low">41%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://himalayas.app/companies/smartclout-media/jobs/web-designer" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit20')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd20')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd20" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://himalayas.app/companies/smartclout-media/jobs/web-designer&quot; --company &quot;SmartClout Media&quot; --title &quot;Web Designer&quot;</textarea>
+<div class="kit" id="kit20">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch20')">Copy</button></div>
+<pre id="pitch20">B.Tech CS graduate skilled in javascript, debugging, java, html, css. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl20')">Copy</button></div>
+<pre id="cl20">Dear Hiring Team at SmartClout Media,
+
+I am writing to apply for the Web Designer position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with javascript, debugging, java, html, css, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#21 Senior Quality Engineer (mobile) <span class="newbadge">NEW</span></div>
+<div class="meta">Lendable · Remote · via Arbeitnow · 1790253614</div>
+<div class="tags"><span class="tag">javascript</span><span class="tag">debugging</span><span class="tag">github</span><span class="tag">java</span><span class="tag">git</span></div>
+</div>
+<div class="score low">39%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.co.uk/jobs/companies/lendable/remote-senior-quality-engineer-mobile-426219" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit21')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd21')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd21" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.co.uk/jobs/companies/lendable/remote-senior-quality-engineer-mobile-426219&quot; --company &quot;Lendable&quot; --title &quot;Senior Quality Engineer (mobile)&quot;</textarea>
+<div class="kit" id="kit21">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch21')">Copy</button></div>
+<pre id="pitch21">B.Tech CS graduate skilled in javascript, debugging, github, java, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl21')">Copy</button></div>
+<pre id="cl21">Dear Hiring Team at Lendable,
+
+I am writing to apply for the Senior Quality Engineer (mobile) position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with javascript, debugging, github, java, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#22 Senior DevOps Engineer (all genders) | Data Platform <span class="newbadge">NEW</span></div>
+<div class="meta">Real Digital · Remote oder Köln / Darmstadt / Düsseldorf / Berlin · via Arbeitnow · 1790237368</div>
+<div class="tags"><span class="tag">debugging</span><span class="tag">python</span><span class="tag">github</span><span class="tag">sql</span><span class="tag">git</span></div>
+</div>
+<div class="score low">39%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.com/jobs/companies/real-digital/remote-senior-devops-engineer-all-genders-data-platform-124702" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit22')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd22')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd22" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.com/jobs/companies/real-digital/remote-senior-devops-engineer-all-genders-data-platform-124702&quot; --company &quot;Real Digital&quot; --title &quot;Senior DevOps Engineer (all genders) | Data Platform&quot;</textarea>
+<div class="kit" id="kit22">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch22')">Copy</button></div>
+<pre id="pitch22">B.Tech CS graduate skilled in debugging, python, github, sql, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl22')">Copy</button></div>
+<pre id="cl22">Dear Hiring Team at Real Digital,
+
+I am writing to apply for the Senior DevOps Engineer (all genders) | Data Platform position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with debugging, python, github, sql, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#23 Full Stack Developer <span class="newbadge">NEW</span></div>
+<div class="meta">Bookboost · Germany - Munich · via Arbeitnow · 1790248183</div>
+<div class="tags"><span class="tag">javascript</span><span class="tag">java</span><span class="tag">sql</span></div>
+</div>
+<div class="score low">36%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.com/jobs/companies/bookboost/full-stack-developer-germany-munich-62198" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit23')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd23')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd23" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.com/jobs/companies/bookboost/full-stack-developer-germany-munich-62198&quot; --company &quot;Bookboost&quot; --title &quot;Full Stack Developer&quot;</textarea>
+<div class="kit" id="kit23">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch23')">Copy</button></div>
+<pre id="pitch23">B.Tech CS graduate skilled in javascript, java, sql. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl23')">Copy</button></div>
+<pre id="cl23">Dear Hiring Team at Bookboost,
+
+I am writing to apply for the Full Stack Developer position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with javascript, java, sql through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#24 Junior Linux Kernel Engineer - Ubuntu <span class="newbadge">NEW</span></div>
+<div class="meta">Canonical · Anywhere · via Jobicy · 2026-09-24T04:55:08+00:00</div>
+<div class="tags"></div>
+</div>
+<div class="score low">35%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://jobicy.com/jobs/149520-junior-linux-kernel-engineer-ubuntu" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit24')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd24')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd24" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://jobicy.com/jobs/149520-junior-linux-kernel-engineer-ubuntu&quot; --company &quot;Canonical&quot; --title &quot;Junior Linux Kernel Engineer - Ubuntu&quot;</textarea>
+<div class="kit" id="kit24">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch24')">Copy</button></div>
+<pre id="pitch24">B.Tech CS graduate skilled in data structures, problem solving, multithreading, spring boot, javascript. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl24')">Copy</button></div>
+<pre id="cl24">Dear Hiring Team at Canonical,
+
+I am writing to apply for the Junior Linux Kernel Engineer - Ubuntu position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with data structures, problem solving, multithreading, spring boot, javascript, algorithms through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#25 Data Engineer (Professional) (Databricks) (m/w/d) <span class="newbadge">NEW</span></div>
+<div class="meta">Collaboration Betters The World GmbH · Stuttgart · via Arbeitnow · 1790254829</div>
+<div class="tags"><span class="tag">python</span><span class="tag">sql</span></div>
+</div>
+<div class="score low">34%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.com/jobs/companies/collaboration-betters-the-world-gmbh/data-engineer-professional-databricks-stuttgart-6155" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit25')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd25')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd25" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.com/jobs/companies/collaboration-betters-the-world-gmbh/data-engineer-professional-databricks-stuttgart-6155&quot; --company &quot;Collaboration Betters The World GmbH&quot; --title &quot;Data Engineer (Professional) (Databricks) (m/w/d)&quot;</textarea>
+<div class="kit" id="kit25">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch25')">Copy</button></div>
+<pre id="pitch25">B.Tech CS graduate skilled in python, sql. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl25')">Copy</button></div>
+<pre id="cl25">Dear Hiring Team at Collaboration Betters The World GmbH,
+
+I am writing to apply for the Data Engineer (Professional) (Databricks) (m/w/d) position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with python, sql through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#26 iOS Engineer <span class="newbadge">NEW</span> <span class="walkinbadge">WALK-IN</span></div>
+<div class="meta">Monzoreferrals · Cardiff · via Arbeitnow · 1790254505</div>
+<div class="tags"><span class="tag">github</span><span class="tag">git</span></div>
+</div>
+<div class="score low">34%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.co.uk/jobs/companies/monzoreferrals/ios-engineer-cardiff-208320" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit26')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd26')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd26" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.co.uk/jobs/companies/monzoreferrals/ios-engineer-cardiff-208320&quot; --company &quot;Monzoreferrals&quot; --title &quot;iOS Engineer&quot;</textarea>
+<div class="kit" id="kit26">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch26')">Copy</button></div>
+<pre id="pitch26">B.Tech CS graduate skilled in github, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl26')">Copy</button></div>
+<pre id="cl26">Dear Hiring Team at Monzoreferrals,
+
+I am writing to apply for the iOS Engineer position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with github, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#27 Android Engineer <span class="newbadge">NEW</span> <span class="walkinbadge">WALK-IN</span></div>
+<div class="meta">Monzoreferrals · Cardiff · via Arbeitnow · 1790254505</div>
+<div class="tags"><span class="tag">github</span><span class="tag">git</span></div>
+</div>
+<div class="score low">34%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.co.uk/jobs/companies/monzoreferrals/android-engineer-cardiff-332212" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit27')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd27')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd27" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.co.uk/jobs/companies/monzoreferrals/android-engineer-cardiff-332212&quot; --company &quot;Monzoreferrals&quot; --title &quot;Android Engineer&quot;</textarea>
+<div class="kit" id="kit27">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch27')">Copy</button></div>
+<pre id="pitch27">B.Tech CS graduate skilled in github, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl27')">Copy</button></div>
+<pre id="cl27">Dear Hiring Team at Monzoreferrals,
+
+I am writing to apply for the Android Engineer position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with github, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#28 Loan Operations Analyst <span class="newbadge">NEW</span></div>
+<div class="meta">Fundingcircle · London · via Arbeitnow · 1790253607</div>
+<div class="tags"><span class="tag">problem solving</span><span class="tag">git</span></div>
+</div>
+<div class="score low">34%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.co.uk/jobs/companies/fundingcircle/loan-operations-analyst-london-131391" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit28')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd28')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd28" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.co.uk/jobs/companies/fundingcircle/loan-operations-analyst-london-131391&quot; --company &quot;Fundingcircle&quot; --title &quot;Loan Operations Analyst&quot;</textarea>
+<div class="kit" id="kit28">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch28')">Copy</button></div>
+<pre id="pitch28">B.Tech CS graduate skilled in problem solving, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl28')">Copy</button></div>
+<pre id="cl28">Dear Hiring Team at Fundingcircle,
+
+I am writing to apply for the Loan Operations Analyst position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with problem solving, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#29 Data Engineer III <span class="newbadge">NEW</span></div>
+<div class="meta">Primer.io · United Kingdom · via Arbeitnow · 1790253606</div>
+<div class="tags"><span class="tag">python</span><span class="tag">sql</span></div>
+</div>
+<div class="score low">34%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.co.uk/jobs/companies/primerio/data-engineer-iii-united-kingdom-210980" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit29')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd29')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd29" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.co.uk/jobs/companies/primerio/data-engineer-iii-united-kingdom-210980&quot; --company &quot;Primer.io&quot; --title &quot;Data Engineer III&quot;</textarea>
+<div class="kit" id="kit29">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch29')">Copy</button></div>
+<pre id="pitch29">B.Tech CS graduate skilled in python, sql. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl29')">Copy</button></div>
+<pre id="cl29">Dear Hiring Team at Primer.io,
+
+I am writing to apply for the Data Engineer III position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with python, sql through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#30 Contrôleur de gestion &amp; Data analyste <span class="newbadge">NEW</span></div>
+<div class="meta">Hi · Lyon, France · via Arbeitnow · 1790180410</div>
+<div class="tags"><span class="tag">sql</span><span class="tag">git</span></div>
+</div>
+<div class="score low">34%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.fr/jobs/companies/hi/controleur-de-gestion-data-analyste-lyon-497459" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit30')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd30')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd30" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.fr/jobs/companies/hi/controleur-de-gestion-data-analyste-lyon-497459&quot; --company &quot;Hi&quot; --title &quot;Contrôleur de gestion &amp; Data analyste&quot;</textarea>
+<div class="kit" id="kit30">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch30')">Copy</button></div>
+<pre id="pitch30">B.Tech CS graduate skilled in sql, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl30')">Copy</button></div>
+<pre id="cl30">Dear Hiring Team at Hi,
+
+I am writing to apply for the Contrôleur de gestion &amp; Data analyste position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with sql, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#31 Software Configuration Engineer Navy Communication System (m/w/x) <span class="newbadge">NEW</span></div>
+<div class="meta">K-tronik GmbH · Munich · via Arbeitnow · 1790245831</div>
+<div class="tags"><span class="tag">python</span><span class="tag">git</span></div>
+</div>
+<div class="score low">34%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.com/jobs/companies/k-tronik-gmbh/software-configuration-engineer-navy-communication-system-munich-443563" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit31')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd31')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd31" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.com/jobs/companies/k-tronik-gmbh/software-configuration-engineer-navy-communication-system-munich-443563&quot; --company &quot;K-tronik GmbH&quot; --title &quot;Software Configuration Engineer Navy Communication System (m/w/x)&quot;</textarea>
+<div class="kit" id="kit31">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch31')">Copy</button></div>
+<pre id="pitch31">B.Tech CS graduate skilled in python, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl31')">Copy</button></div>
+<pre id="cl31">Dear Hiring Team at K-tronik GmbH,
+
+I am writing to apply for the Software Configuration Engineer Navy Communication System (m/w/x) position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with python, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#32 Erfahrener Software Engineer / ML Engineer (m/w/x) im Bildungsumfeld / Remote <span class="newbadge">NEW</span></div>
+<div class="meta">GFN GmbH · Heidelberg · via Arbeitnow · 1790242240</div>
+<div class="tags"><span class="tag">python</span><span class="tag">git</span></div>
+</div>
+<div class="score low">34%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.com/jobs/companies/gfn-gmbh/erfahrener-software-engineer-ml-engineer-im-bildungsumfeld-remote-heidelberg-77114" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit32')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd32')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd32" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.com/jobs/companies/gfn-gmbh/erfahrener-software-engineer-ml-engineer-im-bildungsumfeld-remote-heidelberg-77114&quot; --company &quot;GFN GmbH&quot; --title &quot;Erfahrener Software Engineer / ML Engineer (m/w/x) im Bildungsumfeld / Remote&quot;</textarea>
+<div class="kit" id="kit32">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch32')">Copy</button></div>
+<pre id="pitch32">B.Tech CS graduate skilled in python, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl32')">Copy</button></div>
+<pre id="cl32">Dear Hiring Team at GFN GmbH,
+
+I am writing to apply for the Erfahrener Software Engineer / ML Engineer (m/w/x) im Bildungsumfeld / Remote position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with python, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#33 Frontend Engineer <span class="newbadge">NEW</span></div>
+<div class="meta">Zopa · London · via Arbeitnow · 1790252646</div>
+<div class="tags"><span class="tag">html</span><span class="tag">git</span></div>
+</div>
+<div class="score low">34%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.co.uk/jobs/companies/zopa/frontend-engineer-london-276615" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit33')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd33')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd33" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.co.uk/jobs/companies/zopa/frontend-engineer-london-276615&quot; --company &quot;Zopa&quot; --title &quot;Frontend Engineer&quot;</textarea>
+<div class="kit" id="kit33">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch33')">Copy</button></div>
+<pre id="pitch33">B.Tech CS graduate skilled in html, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl33')">Copy</button></div>
+<pre id="cl33">Dear Hiring Team at Zopa,
+
+I am writing to apply for the Frontend Engineer position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with html, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#34 Data Engineer / Scientist – Multimodal Clinical Data Integration &amp; AI (m/f/d) <span class="newbadge">NEW</span></div>
+<div class="meta">AIPTO TechBio · Heidelberg · via Arbeitnow · 1790231444</div>
+<div class="tags"><span class="tag">python</span><span class="tag">git</span></div>
+</div>
+<div class="score low">34%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.com/jobs/companies/aipto-techbio/data-engineer-scientist-multimodal-clinical-data-integration-ai-heidelberg-305399" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit34')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd34')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd34" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.com/jobs/companies/aipto-techbio/data-engineer-scientist-multimodal-clinical-data-integration-ai-heidelberg-305399&quot; --company &quot;AIPTO TechBio&quot; --title &quot;Data Engineer / Scientist – Multimodal Clinical Data Integration &amp; AI (m/f/d)&quot;</textarea>
+<div class="kit" id="kit34">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch34')">Copy</button></div>
+<pre id="pitch34">B.Tech CS graduate skilled in python, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl34')">Copy</button></div>
+<pre id="cl34">Dear Hiring Team at AIPTO TechBio,
+
+I am writing to apply for the Data Engineer / Scientist – Multimodal Clinical Data Integration &amp; AI (m/f/d) position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with python, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#35 Werkstudent (m/w/d) MarTech, Data &amp; Analytics <span class="newbadge">NEW</span></div>
+<div class="meta">Es Group · Berlin · via Arbeitnow · 1790226576</div>
+<div class="tags"><span class="tag">sql</span><span class="tag">git</span></div>
+</div>
+<div class="score low">34%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.com/jobs/companies/es-group/werkstudent-martech-data-analytics-berlin-205095" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit35')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd35')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd35" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.com/jobs/companies/es-group/werkstudent-martech-data-analytics-berlin-205095&quot; --company &quot;Es Group&quot; --title &quot;Werkstudent (m/w/d) MarTech, Data &amp; Analytics&quot;</textarea>
+<div class="kit" id="kit35">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch35')">Copy</button></div>
+<pre id="pitch35">B.Tech CS graduate skilled in sql, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl35')">Copy</button></div>
+<pre id="cl35">Dear Hiring Team at Es Group,
+
+I am writing to apply for the Werkstudent (m/w/d) MarTech, Data &amp; Analytics position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with sql, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#36 Praktikant Business Building &amp; AI Automation (m/w/d) – Digital Education mit Impact <span class="newbadge">NEW</span></div>
+<div class="meta">Talentspring Academy · Berlin · via Arbeitnow · 1790226568</div>
+<div class="tags"><span class="tag">spring</span><span class="tag">git</span></div>
+</div>
+<div class="score low">34%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.com/jobs/companies/talentspring-academy/praktikant-business-building-ai-automation-digital-education-mit-impact-berlin-333007" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit36')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd36')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd36" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.com/jobs/companies/talentspring-academy/praktikant-business-building-ai-automation-digital-education-mit-impact-berlin-333007&quot; --company &quot;Talentspring Academy&quot; --title &quot;Praktikant Business Building &amp; AI Automation (m/w/d) – Digital Education mit Impact&quot;</textarea>
+<div class="kit" id="kit36">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch36')">Copy</button></div>
+<pre id="pitch36">B.Tech CS graduate skilled in spring, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl36')">Copy</button></div>
+<pre id="cl36">Dear Hiring Team at Talentspring Academy,
+
+I am writing to apply for the Praktikant Business Building &amp; AI Automation (m/w/d) – Digital Education mit Impact position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with spring, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#37 Senior Product Security Engineer <span class="newbadge">NEW</span></div>
+<div class="meta">Alphasense · Location not specified · via Arbeitnow · 1790254504</div>
+<div class="tags"><span class="tag">javascript</span><span class="tag">python</span><span class="tag">java</span><span class="tag">css</span></div>
+</div>
+<div class="score low">33%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.co.uk/jobs/companies/alphasense/senior-product-security-engineer-208830" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit37')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd37')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd37" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.co.uk/jobs/companies/alphasense/senior-product-security-engineer-208830&quot; --company &quot;Alphasense&quot; --title &quot;Senior Product Security Engineer&quot;</textarea>
+<div class="kit" id="kit37">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch37')">Copy</button></div>
+<pre id="pitch37">B.Tech CS graduate skilled in javascript, python, java, css. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl37')">Copy</button></div>
+<pre id="cl37">Dear Hiring Team at Alphasense,
+
+I am writing to apply for the Senior Product Security Engineer position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with javascript, python, java, css through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#38 Senior Software Engineer, Engineering Operations <span class="newbadge">NEW</span></div>
+<div class="meta">Camunda · Remote · via Arbeitnow · 1790181611</div>
+<div class="tags"><span class="tag">python</span><span class="tag">github</span><span class="tag">java</span><span class="tag">git</span></div>
+</div>
+<div class="score low">33%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.fr/jobs/companies/camunda/remote-senior-software-engineer-engineering-operations-474753" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit38')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd38')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd38" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.fr/jobs/companies/camunda/remote-senior-software-engineer-engineering-operations-474753&quot; --company &quot;Camunda&quot; --title &quot;Senior Software Engineer, Engineering Operations&quot;</textarea>
+<div class="kit" id="kit38">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch38')">Copy</button></div>
+<pre id="pitch38">B.Tech CS graduate skilled in python, github, java, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl38')">Copy</button></div>
+<pre id="cl38">Dear Hiring Team at Camunda,
+
+I am writing to apply for the Senior Software Engineer, Engineering Operations position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with python, github, java, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#39 Junior Digital Assets Operations Analyst <span class="seenbadge">Shown in earlier run</span></div>
+<div class="meta">Omega Enterprises · Location not specified · via RemoteOK · 2026-09-22T14:36:54+00:00</div>
+<div class="tags"><span class="tag">git</span></div>
+</div>
+<div class="score low">42%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://remoteOK.com/remote-jobs/remote-junior-digital-assets-operations-analyst-omega-enterprises-1137418" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit39')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd39')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd39" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://remoteOK.com/remote-jobs/remote-junior-digital-assets-operations-analyst-omega-enterprises-1137418&quot; --company &quot;Omega Enterprises&quot; --title &quot;Junior Digital Assets Operations Analyst&quot;</textarea>
+<div class="kit" id="kit39">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch39')">Copy</button></div>
+<pre id="pitch39">B.Tech CS graduate skilled in git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl39')">Copy</button></div>
+<pre id="cl39">Dear Hiring Team at Omega Enterprises,
+
+I am writing to apply for the Junior Digital Assets Operations Analyst position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#40 Junior Crypto Analyst &amp; Trader <span class="seenbadge">Shown in earlier run</span></div>
+<div class="meta">Empire Assets · Location not specified · via RemoteOK · 2026-09-04T15:13:46+00:00</div>
+<div class="tags"><span class="tag">git</span></div>
+</div>
+<div class="score low">42%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://remoteOK.com/remote-jobs/remote-junior-crypto-analyst-trader-empire-assets-1137307" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit40')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd40')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd40" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://remoteOK.com/remote-jobs/remote-junior-crypto-analyst-trader-empire-assets-1137307&quot; --company &quot;Empire Assets&quot; --title &quot;Junior Crypto Analyst &amp; Trader&quot;</textarea>
+<div class="kit" id="kit40">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch40')">Copy</button></div>
+<pre id="pitch40">B.Tech CS graduate skilled in git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl40')">Copy</button></div>
+<pre id="cl40">Dear Hiring Team at Empire Assets,
+
+I am writing to apply for the Junior Crypto Analyst &amp; Trader position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#41 Brand Protection &amp; Marketplace Compliance Analyst <span class="seenbadge">Shown in earlier run</span></div>
+<div class="meta">MultiplyMii · Location not specified · via RemoteOK · 2026-08-14T16:00:49+00:00</div>
+<div class="tags"><span class="tag">git</span></div>
+</div>
+<div class="score low">42%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://remoteOK.com/remote-jobs/remote-brand-protection-marketplace-compliance-analyst-multiplymii-1136687" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit41')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd41')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd41" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://remoteOK.com/remote-jobs/remote-brand-protection-marketplace-compliance-analyst-multiplymii-1136687&quot; --company &quot;MultiplyMii&quot; --title &quot;Brand Protection &amp; Marketplace Compliance Analyst&quot;</textarea>
+<div class="kit" id="kit41">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch41')">Copy</button></div>
+<pre id="pitch41">B.Tech CS graduate skilled in git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl41')">Copy</button></div>
+<pre id="cl41">Dear Hiring Team at MultiplyMii,
+
+I am writing to apply for the Brand Protection &amp; Marketplace Compliance Analyst position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#42 Frontend Web Application Developer <span class="seenbadge">Shown in earlier run</span></div>
+<div class="meta">KoboToolbox · USA, Canada, Argentina, Mexico, Peru · via Remotive · 2026-09-18T16:43:22</div>
+<div class="tags"><span class="tag">problem solving</span><span class="tag">python</span><span class="tag">git</span></div>
+</div>
+<div class="score low">41%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://remotive.com/remote-jobs/design/frontend-web-application-developer-2091141" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit42')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd42')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd42" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://remotive.com/remote-jobs/design/frontend-web-application-developer-2091141&quot; --company &quot;KoboToolbox&quot; --title &quot;Frontend Web Application Developer&quot;</textarea>
+<div class="kit" id="kit42">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch42')">Copy</button></div>
+<pre id="pitch42">B.Tech CS graduate skilled in problem solving, python, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl42')">Copy</button></div>
+<pre id="cl42">Dear Hiring Team at KoboToolbox,
+
+I am writing to apply for the Frontend Web Application Developer position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with problem solving, python, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#43 New Graduate Engineer, Silicon Engineering <span class="seenbadge">Shown in earlier run</span></div>
+<div class="meta">SpaceX · Irvine, CA, Palo Alto, CA, Redmond, WA · via The Muse · 2026-09-02T19:45:55Z</div>
+<div class="tags"><span class="tag">python</span><span class="tag">spring</span><span class="tag">git</span></div>
+</div>
+<div class="score low">41%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.themuse.com/jobs/spacex/new-graduate-engineer-silicon-engineering" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit43')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd43')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd43" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.themuse.com/jobs/spacex/new-graduate-engineer-silicon-engineering&quot; --company &quot;SpaceX&quot; --title &quot;New Graduate Engineer, Silicon Engineering&quot;</textarea>
+<div class="kit" id="kit43">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch43')">Copy</button></div>
+<pre id="pitch43">B.Tech CS graduate skilled in python, spring, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl43')">Copy</button></div>
+<pre id="cl43">Dear Hiring Team at SpaceX,
+
+I am writing to apply for the New Graduate Engineer, Silicon Engineering position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with python, spring, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#44 New Graduate Engineer, Silicon Engineering <span class="seenbadge">Shown in earlier run</span></div>
+<div class="meta">SpaceX · Irvine, CA, Palo Alto, CA, Redmond, WA · via The Muse · 2026-09-02T19:45:55Z</div>
+<div class="tags"><span class="tag">python</span><span class="tag">spring</span><span class="tag">git</span></div>
+</div>
+<div class="score low">41%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.themuse.com/jobs/spacex/new-graduate-engineer-silicon-engineering-546fbc" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit44')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd44')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd44" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.themuse.com/jobs/spacex/new-graduate-engineer-silicon-engineering-546fbc&quot; --company &quot;SpaceX&quot; --title &quot;New Graduate Engineer, Silicon Engineering&quot;</textarea>
+<div class="kit" id="kit44">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch44')">Copy</button></div>
+<pre id="pitch44">B.Tech CS graduate skilled in python, spring, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl44')">Copy</button></div>
+<pre id="cl44">Dear Hiring Team at SpaceX,
+
+I am writing to apply for the New Graduate Engineer, Silicon Engineering position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with python, spring, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#45 New Graduate Engineer, GNC- &#39;26/&#39;27 (Starlink) <span class="seenbadge">Shown in earlier run</span></div>
+<div class="meta">SpaceX · Lockhart, TX · via The Muse · 2026-08-14T18:55:59Z</div>
+<div class="tags"><span class="tag">problem solving</span><span class="tag">algorithms</span><span class="tag">python</span></div>
+</div>
+<div class="score low">41%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.themuse.com/jobs/spacex/new-graduate-engineer-gnc-2627-starlink-4689f1" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit45')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd45')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd45" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.themuse.com/jobs/spacex/new-graduate-engineer-gnc-2627-starlink-4689f1&quot; --company &quot;SpaceX&quot; --title &quot;New Graduate Engineer, GNC- &#39;26/&#39;27 (Starlink)&quot;</textarea>
+<div class="kit" id="kit45">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch45')">Copy</button></div>
+<pre id="pitch45">B.Tech CS graduate skilled in problem solving, algorithms, python. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl45')">Copy</button></div>
+<pre id="cl45">Dear Hiring Team at SpaceX,
+
+I am writing to apply for the New Graduate Engineer, GNC- &#39;26/&#39;27 (Starlink) position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with problem solving, algorithms, python through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#46 New Graduate Engineer, GNC- &#39;26/&#39;27 (Starlink) <span class="seenbadge">Shown in earlier run</span></div>
+<div class="meta">SpaceX · Redmond, WA · via The Muse · 2026-08-14T18:55:59Z</div>
+<div class="tags"><span class="tag">problem solving</span><span class="tag">algorithms</span><span class="tag">python</span></div>
+</div>
+<div class="score low">41%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.themuse.com/jobs/spacex/new-graduate-engineer-gnc-2627-starlink" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit46')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd46')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd46" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.themuse.com/jobs/spacex/new-graduate-engineer-gnc-2627-starlink&quot; --company &quot;SpaceX&quot; --title &quot;New Graduate Engineer, GNC- &#39;26/&#39;27 (Starlink)&quot;</textarea>
+<div class="kit" id="kit46">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch46')">Copy</button></div>
+<pre id="pitch46">B.Tech CS graduate skilled in problem solving, algorithms, python. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl46')">Copy</button></div>
+<pre id="cl46">Dear Hiring Team at SpaceX,
+
+I am writing to apply for the New Graduate Engineer, GNC- &#39;26/&#39;27 (Starlink) position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with problem solving, algorithms, python through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#47 New Graduate Engineer, Silicon Engineering <span class="seenbadge">Shown in earlier run</span></div>
+<div class="meta">SpaceX · Irvine, CA, Palo Alto, CA, Redmond, WA · via The Muse · 2026-09-02T19:45:54Z</div>
+<div class="tags"><span class="tag">python</span><span class="tag">spring</span><span class="tag">git</span></div>
+</div>
+<div class="score low">41%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.themuse.com/jobs/spacex/new-graduate-engineer-silicon-engineering-8d451e" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit47')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd47')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd47" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.themuse.com/jobs/spacex/new-graduate-engineer-silicon-engineering-8d451e&quot; --company &quot;SpaceX&quot; --title &quot;New Graduate Engineer, Silicon Engineering&quot;</textarea>
+<div class="kit" id="kit47">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch47')">Copy</button></div>
+<pre id="pitch47">B.Tech CS graduate skilled in python, spring, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl47')">Copy</button></div>
+<pre id="cl47">Dear Hiring Team at SpaceX,
+
+I am writing to apply for the New Graduate Engineer, Silicon Engineering position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with python, spring, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#48 New Graduate Engineer, Electrical - &#39;26/&#39;27 (Starlink) <span class="seenbadge">Shown in earlier run</span></div>
+<div class="meta">SpaceX · Lockhart, TX · via The Muse · 2026-08-14T18:55:59Z</div>
+<div class="tags"><span class="tag">debugging</span><span class="tag">python</span><span class="tag">git</span></div>
+</div>
+<div class="score low">41%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.themuse.com/jobs/spacex/new-graduate-engineer-electrical-2627-starlink" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit48')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd48')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd48" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.themuse.com/jobs/spacex/new-graduate-engineer-electrical-2627-starlink&quot; --company &quot;SpaceX&quot; --title &quot;New Graduate Engineer, Electrical - &#39;26/&#39;27 (Starlink)&quot;</textarea>
+<div class="kit" id="kit48">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch48')">Copy</button></div>
+<pre id="pitch48">B.Tech CS graduate skilled in debugging, python, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl48')">Copy</button></div>
+<pre id="cl48">Dear Hiring Team at SpaceX,
+
+I am writing to apply for the New Graduate Engineer, Electrical - &#39;26/&#39;27 (Starlink) position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with debugging, python, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#49 DESARROLLADOR FULL STACK <span class="seenbadge">Shown in earlier run</span></div>
+<div class="meta">Kruger NearShore LLC - Rekluti · Location not specified · via RemoteOK · 2026-08-22T00:00:12+00:00</div>
+<div class="tags"><span class="tag">python</span><span class="tag">sql</span><span class="tag">git</span></div>
+</div>
+<div class="score low">36%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://remoteOK.com/remote-jobs/remote-desarrollador-full-stack-kruger-nearshore-llc-rekluti-1137062" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit49')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd49')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd49" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://remoteOK.com/remote-jobs/remote-desarrollador-full-stack-kruger-nearshore-llc-rekluti-1137062&quot; --company &quot;Kruger NearShore LLC - Rekluti&quot; --title &quot;DESARROLLADOR FULL STACK&quot;</textarea>
+<div class="kit" id="kit49">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch49')">Copy</button></div>
+<pre id="pitch49">B.Tech CS graduate skilled in python, sql, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl49')">Copy</button></div>
+<pre id="cl49">Dear Hiring Team at Kruger NearShore LLC - Rekluti,
+
+I am writing to apply for the DESARROLLADOR FULL STACK position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with python, sql, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#50 AI agent engineer <span class="seenbadge">Shown in earlier run</span></div>
+<div class="meta">Sticker Mule · Location not specified · via RemoteOK · 2026-09-16T12:44:27+00:00</div>
+<div class="tags"></div>
+</div>
+<div class="score low">35%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://remoteOK.com/remote-jobs/remote-ai-agent-engineer-sticker-mule-1137399" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit50')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd50')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd50" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://remoteOK.com/remote-jobs/remote-ai-agent-engineer-sticker-mule-1137399&quot; --company &quot;Sticker Mule&quot; --title &quot;AI agent engineer&quot;</textarea>
+<div class="kit" id="kit50">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch50')">Copy</button></div>
+<pre id="pitch50">B.Tech CS graduate skilled in data structures, problem solving, multithreading, spring boot, javascript. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl50')">Copy</button></div>
+<pre id="cl50">Dear Hiring Team at Sticker Mule,
+
+I am writing to apply for the AI agent engineer position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with data structures, problem solving, multithreading, spring boot, javascript, algorithms through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#51 AI Trainer Image QA Evaluator <span class="seenbadge">Shown in earlier run</span></div>
+<div class="meta">iMerit Technology · Location not specified · via RemoteOK · 2026-09-16T06:55:47+00:00</div>
+<div class="tags"></div>
+</div>
+<div class="score low">35%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://remoteOK.com/remote-jobs/remote-ai-trainer-image-qa-evaluator-imerit-technology-1137398" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit51')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd51')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd51" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://remoteOK.com/remote-jobs/remote-ai-trainer-image-qa-evaluator-imerit-technology-1137398&quot; --company &quot;iMerit Technology&quot; --title &quot;AI Trainer Image QA Evaluator&quot;</textarea>
+<div class="kit" id="kit51">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch51')">Copy</button></div>
+<pre id="pitch51">B.Tech CS graduate skilled in data structures, problem solving, multithreading, spring boot, javascript. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl51')">Copy</button></div>
+<pre id="cl51">Dear Hiring Team at iMerit Technology,
+
+I am writing to apply for the AI Trainer Image QA Evaluator position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with data structures, problem solving, multithreading, spring boot, javascript, algorithms through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#52 Education Designer UX UI and AI <span class="seenbadge">Shown in earlier run</span></div>
+<div class="meta">Interaction Design Foundation · Location not specified · via RemoteOK · 2026-08-26T12:41:23+00:00</div>
+<div class="tags"></div>
+</div>
+<div class="score low">35%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://remoteOK.com/remote-jobs/remote-education-designer-ux-ui-and-ai-interaction-design-foundation-1137138" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit52')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd52')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd52" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://remoteOK.com/remote-jobs/remote-education-designer-ux-ui-and-ai-interaction-design-foundation-1137138&quot; --company &quot;Interaction Design Foundation&quot; --title &quot;Education Designer UX UI and AI&quot;</textarea>
+<div class="kit" id="kit52">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch52')">Copy</button></div>
+<pre id="pitch52">B.Tech CS graduate skilled in data structures, problem solving, multithreading, spring boot, javascript. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl52')">Copy</button></div>
+<pre id="cl52">Dear Hiring Team at Interaction Design Foundation,
+
+I am writing to apply for the Education Designer UX UI and AI position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with data structures, problem solving, multithreading, spring boot, javascript, algorithms through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#53 Course Writer and Editor UX UI and AI <span class="seenbadge">Shown in earlier run</span></div>
+<div class="meta">Interaction Design Foundation · Location not specified · via RemoteOK · 2026-08-26T12:33:33+00:00</div>
+<div class="tags"></div>
+</div>
+<div class="score low">35%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://remoteOK.com/remote-jobs/remote-course-writer-and-editor-ux-ui-and-ai-interaction-design-foundation-1137136" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit53')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd53')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd53" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://remoteOK.com/remote-jobs/remote-course-writer-and-editor-ux-ui-and-ai-interaction-design-foundation-1137136&quot; --company &quot;Interaction Design Foundation&quot; --title &quot;Course Writer and Editor UX UI and AI&quot;</textarea>
+<div class="kit" id="kit53">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch53')">Copy</button></div>
+<pre id="pitch53">B.Tech CS graduate skilled in data structures, problem solving, multithreading, spring boot, javascript. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl53')">Copy</button></div>
+<pre id="cl53">Dear Hiring Team at Interaction Design Foundation,
+
+I am writing to apply for the Course Writer and Editor UX UI and AI position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with data structures, problem solving, multithreading, spring boot, javascript, algorithms through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#54 Consultant Implementation Engineer <span class="seenbadge">Shown in earlier run</span></div>
+<div class="meta">Harbor · Remote · via RemoteOK · 2026-08-20T00:00:15+00:00</div>
+<div class="tags"></div>
+</div>
+<div class="score low">35%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://remoteOK.com/remote-jobs/remote-consultant-implementation-engineer-harbor-1136987" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit54')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd54')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd54" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://remoteOK.com/remote-jobs/remote-consultant-implementation-engineer-harbor-1136987&quot; --company &quot;Harbor&quot; --title &quot;Consultant Implementation Engineer&quot;</textarea>
+<div class="kit" id="kit54">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch54')">Copy</button></div>
+<pre id="pitch54">B.Tech CS graduate skilled in data structures, problem solving, multithreading, spring boot, javascript. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl54')">Copy</button></div>
+<pre id="cl54">Dear Hiring Team at Harbor,
+
+I am writing to apply for the Consultant Implementation Engineer position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with data structures, problem solving, multithreading, spring boot, javascript, algorithms through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#55 QA Tester Entry Level <span class="seenbadge">Shown in earlier run</span></div>
+<div class="meta">Ace IT Careers · Remote · via RemoteOK · 2026-08-15T00:00:25+00:00</div>
+<div class="tags"></div>
+</div>
+<div class="score low">35%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://remoteOK.com/remote-jobs/remote-qa-tester-entry-level-ace-it-careers-1136701" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit55')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd55')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd55" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://remoteOK.com/remote-jobs/remote-qa-tester-entry-level-ace-it-careers-1136701&quot; --company &quot;Ace IT Careers&quot; --title &quot;QA Tester Entry Level&quot;</textarea>
+<div class="kit" id="kit55">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch55')">Copy</button></div>
+<pre id="pitch55">B.Tech CS graduate skilled in data structures, problem solving, multithreading, spring boot, javascript. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl55')">Copy</button></div>
+<pre id="cl55">Dear Hiring Team at Ace IT Careers,
+
+I am writing to apply for the QA Tester Entry Level position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with data structures, problem solving, multithreading, spring boot, javascript, algorithms through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#56 Field Service Engineer (ESS / PV) - France (South) <span class="seenbadge">Shown in earlier run</span></div>
+<div class="meta">Sungrow Europe - Welcome traveler! · France - remote · via Arbeitnow · 1790168995</div>
+<div class="tags"></div>
+</div>
+<div class="score low">35%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.fr/jobs/companies/sungrow-europe-welcome-traveler/remote-field-service-engineer-ess-pv-france-south-22671" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit56')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd56')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd56" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.fr/jobs/companies/sungrow-europe-welcome-traveler/remote-field-service-engineer-ess-pv-france-south-22671&quot; --company &quot;Sungrow Europe - Welcome traveler!&quot; --title &quot;Field Service Engineer (ESS / PV) - France (South)&quot;</textarea>
+<div class="kit" id="kit56">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch56')">Copy</button></div>
+<pre id="pitch56">B.Tech CS graduate skilled in data structures, problem solving, multithreading, spring boot, javascript. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl56')">Copy</button></div>
+<pre id="cl56">Dear Hiring Team at Sungrow Europe - Welcome traveler!,
+
+I am writing to apply for the Field Service Engineer (ESS / PV) - France (South) position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with data structures, problem solving, multithreading, spring boot, javascript, algorithms through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#57 Gestionnaire d&#39;application informatique - 0592 H/F <span class="seenbadge">Shown in earlier run</span></div>
+<div class="meta">Agence de services et de paiement · Montreuil, Île-de-France, France · via Arbeitnow · 1790170205</div>
+<div class="tags"><span class="tag">css</span><span class="tag">sql</span></div>
+</div>
+<div class="score low">34%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.fr/jobs/companies/agence-de-services-et-de-paiement/gestionnaire-dapplication-informatique-0592-h-f-montreuil-171782" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit57')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd57')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd57" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.fr/jobs/companies/agence-de-services-et-de-paiement/gestionnaire-dapplication-informatique-0592-h-f-montreuil-171782&quot; --company &quot;Agence de services et de paiement&quot; --title &quot;Gestionnaire d&#39;application informatique - 0592 H/F&quot;</textarea>
+<div class="kit" id="kit57">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch57')">Copy</button></div>
+<pre id="pitch57">B.Tech CS graduate skilled in css, sql. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl57')">Copy</button></div>
+<pre id="cl57">Dear Hiring Team at Agence de services et de paiement,
+
+I am writing to apply for the Gestionnaire d&#39;application informatique - 0592 H/F position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with css, sql through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#58 Confirmed Backend Engineer - Care <span class="seenbadge">Shown in earlier run</span></div>
+<div class="meta">Blablacar · Paris, France · via Arbeitnow · 1790168687</div>
+<div class="tags"><span class="tag">java</span><span class="tag">git</span></div>
+</div>
+<div class="score low">34%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.arbeitnow.fr/jobs/companies/blablacar/confirmed-backend-engineer-care-paris-france-424225" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit58')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd58')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd58" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.arbeitnow.fr/jobs/companies/blablacar/confirmed-backend-engineer-care-paris-france-424225&quot; --company &quot;Blablacar&quot; --title &quot;Confirmed Backend Engineer - Care&quot;</textarea>
+<div class="kit" id="kit58">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch58')">Copy</button></div>
+<pre id="pitch58">B.Tech CS graduate skilled in java, git. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl58')">Copy</button></div>
+<pre id="cl58">Dear Hiring Team at Blablacar,
+
+I am writing to apply for the Confirmed Backend Engineer - Care position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with java, git through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#59 New Graduate Engineer, Software (Application Software) <span class="seenbadge">Shown in earlier run</span></div>
+<div class="meta">SpaceX · El Segundo, CA · via The Muse · 2026-08-19T23:55:17Z</div>
+<div class="tags"><span class="tag">problem solving</span><span class="tag">python</span></div>
+</div>
+<div class="score low">34%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.themuse.com/jobs/spacex/new-graduate-engineer-software-application-software" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit59')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd59')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd59" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.themuse.com/jobs/spacex/new-graduate-engineer-software-application-software&quot; --company &quot;SpaceX&quot; --title &quot;New Graduate Engineer, Software (Application Software)&quot;</textarea>
+<div class="kit" id="kit59">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch59')">Copy</button></div>
+<pre id="pitch59">B.Tech CS graduate skilled in problem solving, python. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl59')">Copy</button></div>
+<pre id="cl59">Dear Hiring Team at SpaceX,
+
+I am writing to apply for the New Graduate Engineer, Software (Application Software) position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with problem solving, python through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#60 New Graduate Engineer, Software  - &#39;26/&#39;27  (Starlink) <span class="seenbadge">Shown in earlier run</span></div>
+<div class="meta">SpaceX · Lockhart, TX · via The Muse · 2026-08-14T18:55:59Z</div>
+<div class="tags"><span class="tag">problem solving</span><span class="tag">python</span></div>
+</div>
+<div class="score low">34%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.themuse.com/jobs/spacex/new-graduate-engineer-software-2627-starlink" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit60')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd60')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd60" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.themuse.com/jobs/spacex/new-graduate-engineer-software-2627-starlink&quot; --company &quot;SpaceX&quot; --title &quot;New Graduate Engineer, Software  - &#39;26/&#39;27  (Starlink)&quot;</textarea>
+<div class="kit" id="kit60">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch60')">Copy</button></div>
+<pre id="pitch60">B.Tech CS graduate skilled in problem solving, python. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl60')">Copy</button></div>
+<pre id="cl60">Dear Hiring Team at SpaceX,
+
+I am writing to apply for the New Graduate Engineer, Software  - &#39;26/&#39;27  (Starlink) position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with problem solving, python through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#61 New Graduate Engineer, Software - &#39;26/&#39;27 (Starlink) <span class="seenbadge">Shown in earlier run</span></div>
+<div class="meta">SpaceX · Redmond, WA · via The Muse · 2026-08-14T18:55:59Z</div>
+<div class="tags"><span class="tag">problem solving</span><span class="tag">python</span></div>
+</div>
+<div class="score low">34%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.themuse.com/jobs/spacex/new-graduate-engineer-software-2627-starlink-3f109c" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit61')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd61')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd61" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.themuse.com/jobs/spacex/new-graduate-engineer-software-2627-starlink-3f109c&quot; --company &quot;SpaceX&quot; --title &quot;New Graduate Engineer, Software - &#39;26/&#39;27 (Starlink)&quot;</textarea>
+<div class="kit" id="kit61">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch61')">Copy</button></div>
+<pre id="pitch61">B.Tech CS graduate skilled in problem solving, python. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl61')">Copy</button></div>
+<pre id="cl61">Dear Hiring Team at SpaceX,
+
+I am writing to apply for the New Graduate Engineer, Software - &#39;26/&#39;27 (Starlink) position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with problem solving, python through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+<div class="card">
+<div class="cardtop">
+<div>
+<div class="jobtitle">#62 New Graduate Engineer, Software - &#39;26/&#39;27 (Starlink) <span class="seenbadge">Shown in earlier run</span></div>
+<div class="meta">SpaceX · Palo Alto, CA · via The Muse · 2026-08-14T18:55:59Z</div>
+<div class="tags"><span class="tag">problem solving</span><span class="tag">python</span></div>
+</div>
+<div class="score low">34%</div>
+</div>
+<div class="actions">
+<a class="btn apply" href="https://www.themuse.com/jobs/spacex/new-graduate-engineer-software-2627-starlink-2463ca" target="_blank" rel="noopener">Open &amp; Apply</a>
+<button class="btn ghost" onclick="toggle('kit62')">Application kit</button>
+<button class="btn ghost" onclick="copyCmd('cmd62')">Copy assisted-fill command</button>
+</div>
+<textarea id="cmd62" style="position:absolute;left:-9999px;">java -jar ResumeJobHunter-4.0-jar-with-dependencies.jar --assist &quot;https://www.themuse.com/jobs/spacex/new-graduate-engineer-software-2627-starlink-2463ca&quot; --company &quot;SpaceX&quot; --title &quot;New Graduate Engineer, Software - &#39;26/&#39;27 (Starlink)&quot;</textarea>
+<div class="kit" id="kit62">
+<div class="kitlabel">Short pitch (for "About you" boxes) <button class="copy" onclick="copyText('pitch62')">Copy</button></div>
+<pre id="pitch62">B.Tech CS graduate skilled in problem solving, python. Strong DSA fundamentals, quick
+learner, immediate joiner, open to remote and on-site roles.</pre>
+<div class="kitlabel">Cover letter <button class="copy" onclick="copyText('cl62')">Copy</button></div>
+<pre id="cl62">Dear Hiring Team at SpaceX,
+
+I am writing to apply for the New Graduate Engineer, Software - &#39;26/&#39;27 (Starlink) position. I recently completed my B.Tech in
+Computer Science and have hands-on experience with problem solving, python through
+academic projects and self-driven work.
+
+As an early-career developer, I bring strong fundamentals in data structures and problem
+solving, a fast learning curve, and genuine enthusiasm for building real products. I am
+available to join immediately and am comfortable working remotely or on-site.
+
+I would welcome the chance to discuss how I can contribute to your team.
+
+Sincerely,
+ARASHAD JYA
+jyaarashad@gmail.com | +91-8052214912</pre>
+<div class="kitlabel">Quick answers</div>
+<pre>Name: ARASHAD JYA
+Email: jyaarashad@gmail.com
+Phone: +91-8052214912
+Notice period: Immediate joiner
+Experience: Fresher (B.Tech Computer Science)</pre>
+</div>
+</div>
+</div>
+<footer>Job Hunter v4 · free &amp; open sources only · every run saved in output/&lt;date&gt;/&lt;run number&gt;</footer>
+<script>
+function toggle(id){document.getElementById(id).classList.toggle('open');}
+function copyText(id){navigator.clipboard.writeText(document.getElementById(id).innerText).then(()=>alert('Copied!'));}
+function copyCmd(id){navigator.clipboard.writeText(document.getElementById(id).value).then(()=>alert('Command copied! Paste it in your terminal.'));}
+
+</script>
+</body>
+</html>

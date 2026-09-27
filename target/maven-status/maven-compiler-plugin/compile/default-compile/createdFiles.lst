@@ -1,0 +1,17 @@
+com\jobhunter\Tracker.class
+com\jobhunter\HtmlEscape.class
+com\jobhunter\JobScorer.class
+com\jobhunter\model\Profile.class
+com\jobhunter\model\RunContext.class
+com\jobhunter\Main$CliArgs.class
+com\jobhunter\model\Job.class
+com\jobhunter\DashboardBuilder.class
+com\jobhunter\JobScorer$ScoreResult.class
+com\jobhunter\AutoApply.class
+com\jobhunter\QuickLinks$Group.class
+com\jobhunter\JobFetcher.class
+com\jobhunter\ResumeParser.class
+com\jobhunter\QuickLinks$Link.class
+com\jobhunter\JobFetcher$1Source.class
+com\jobhunter\Main.class
+com\jobhunter\QuickLinks.class

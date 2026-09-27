@@ -1,0 +1,190 @@
+# ------------------------------------------------------------------
+# KNOWN_SKILLS reference list for ResumeParser
+# One skill per line. Lines starting with # are ignored.
+# Keep entries lowercase; ResumeParser lowercases resume text before matching.
+# ------------------------------------------------------------------
+
+# Languages
+java
+python
+javascript
+typescript
+c
+c++
+c#
+go
+golang
+rust
+kotlin
+swift
+php
+ruby
+scala
+r
+matlab
+perl
+dart
+objective-c
+shell
+bash
+powershell
+
+# Web / Frontend
+html
+css
+sass
+scss
+react
+reactjs
+react.js
+redux
+angular
+angularjs
+vue
+vuejs
+vue.js
+next.js
+nextjs
+nuxt.js
+svelte
+jquery
+bootstrap
+tailwind
+tailwindcss
+webpack
+vite
+graphql
+rest
+restful api
+websocket
+
+# Backend / Frameworks
+node
+node.js
+nodejs
+express
+express.js
+spring
+spring boot
+springboot
+hibernate
+django
+flask
+fastapi
+laravel
+symfony
+rails
+ruby on rails
+asp.net
+.net
+.net core
+gin
+fiber
+
+# Mobile
+android
+ios
+flutter
+react native
+xamarin
+swiftui
+jetpack compose
+
+# Data / AI / ML
+machine learning
+deep learning
+artificial intelligence
+data science
+data analysis
+data engineering
+nlp
+computer vision
+tensorflow
+pytorch
+keras
+scikit-learn
+sklearn
+pandas
+numpy
+matplotlib
+opencv
+llm
+generative ai
+neural networks
+
+# Databases
+sql
+mysql
+postgresql
+postgres
+mongodb
+redis
+sqlite
+oracle
+cassandra
+dynamodb
+firebase
+elasticsearch
+mariadb
+ms sql server
+
+# DevOps / Cloud
+aws
+azure
+gcp
+google cloud
+docker
+kubernetes
+jenkins
+ci/cd
+terraform
+ansible
+git
+github
+gitlab
+bitbucket
+linux
+nginx
+apache
+microservices
+serverless
+cloudformation
+grafana
+prometheus
+
+# CS Fundamentals / Methodologies
+data structures
+algorithms
+dsa
+oop
+oops
+object oriented programming
+system design
+design patterns
+agile
+scrum
+unit testing
+junit
+testng
+selenium
+api testing
+tdd
+debugging
+problem solving
+multithreading
+distributed systems
+operating systems
+computer networks
+dbms
+
+# Tools
+postman
+jira
+figma
+vs code
+intellij
+eclipse
+maven
+gradle
+npm
+yarn
